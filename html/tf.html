@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True/False Quiz</title>
+    <link rel="stylesheet" href="tf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1d9XbN30wX2+xLT59pzfokCeSrqcM27XG7oeyL/XgOH2Z82/VS4b9b7NEm6BIyVYP3T+bHtWnNh/gMJnGJrbKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>True or False Quiz</h1>
+         <div id="timer">
+            <i class="fas fa-clock"></i> Time Left: <span id="countdown">60</span> seconds
+        </div>
+        <div class="question-box">
+            <div class="question">Question 1: The Earth is flat. </div>
+            <div class="options">
+                <input type="radio" name="answer1" value="true" id="true1">
+                <label for="true1">True</label>
+                <input type="radio" name="answer1" value="false" id="false1">
+                <label for="false1">False</label>
+            </div>
+            <div id="result1"></div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Question 2: Mount Everest is the tallest mountain in the world. </div>
+            <div class="options">
+                <input type="radio" name="answer2" value="true" id="true2">
+                <label for="true2">True</label>
+                <input type="radio" name="answer2" value="false" id="false2">
+                <label for="false2">False</label>
+            </div>
+            <div id="result2"></div>
+        </div>
+        
+        <div class="question-box">
+            <div class="question">Question 3: The capital of France is London. </div>
+            <div class="options">
+                <input type="radio" name="answer3" value="true" id="true3">
+                <label for="true3">True</label>
+                <input type="radio" name="answer3" value="false" id="false3">
+                <label for="false3">False</label>
+            </div>
+            <div id="result3"></div>
+        </div>
+        
+
+        <div class="question-box">
+            <div class="question">Question 4: The Sun rises in the west. </div>
+            <div class="options">
+                <input type="radio" name="answer4" value="true" id="true4">
+                <label for="true4">True</label>
+                <input type="radio" name="answer4" value="false" id="false4">
+                <label for="false4">False</label>
+            </div>
+            <div id="result4"></div>
+        </div>
+        
+
+        <div class="question-box">
+            <div class="question">Question 5: Water boils at 100 degrees Celsius at sea level. </div>
+            <div class="options">
+                <input type="radio" name="answer5" value="true" id="true5">
+                <label for="true5">True</label>
+                <input type="radio" name="answer5" value="false" id="false5">
+                <label for="false5">False</label>
+            </div>
+            <div id="result5"></div>
+        </div>
+        <button type="button" id="submitBtn" onclick="submitQuiz()" href="tscore.html">Submit Quiz</button>
+        <script src="tscore.js"></script>
+    </div>
+    <script src="tf.js"></script>
+</body>
+</html>

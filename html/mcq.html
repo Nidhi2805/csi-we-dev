@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <head>
+        <link rel="stylesheet" href="mcq.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1d9XbN30wX2+xLT59pzfokCeSrqcM27XG7oeyL/XgOH2Z82/VS4b9b7NEm6BIyVYP3T+bHtWnNh/gMJnGJrbKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    
+</head>
+<body>
+    <h1>Multiple Choice Quiz</h1>
+    <div id="timer">
+        <i class="fas fa-clock"></i> Time Left: <span id="countdown">60</span> seconds
+    </div>
+    <form id="quizForm" class="quiz-form"></form>
+        <div id="question1">
+        <h2>Question 1: What is the capital of France?</h2>
+        <form class="option">
+            <input type="radio" name="answer1" value="a" id="a1">
+            <label for="a1"> Madrid</label><br>
+            <input type="radio" name="answer1" value="b" id="b1">
+            <label for="b1"> Paris</label><br>
+            <input type="radio" name="answer1" value="c" id="c1">
+            <label for="c1"> London</label><br>
+            <input type="radio" name="answer1" value="d" id="d1">
+            <label for="d1"> Rome</label><br><br>
+            <button type="button" onclick="displayHint('hint1')">Hint</button>
+            <p id="hint1" style="display: none;">Hint: The capital of France is known as the "City of Light" and is famous for its iconic tower.</p>
+        </form>
+        </div>
+        </div>
+        <script>
+            function checkAnswer1() {
+                var answer = document.querySelector('input[name="answer1"]:checked');
+                if (answer !== null) {
+                    if (answer.value === "b") {
+                        alert("Correct! Paris is the capital of France.");
+                    } else {
+                        alert("Incorrect! The correct answer is Paris.");
+                    }
+                } else {
+                    alert("Please select an answer.");
+                }
+            }
+            function displayHint(id) {
+                var hint = document.getElementById(id);
+                hint.style.display = 'block';
+            }
+        </script>
+        
+        <div id="question2">
+            <h2>Question 2: Who wrote the play "Romeo and Juliet"?</h2>
+            <form class="option">
+                <input type="radio" name="answer2" value="a" id="a2">
+                <label for="a2"> William Shakespeare</label><br>
+                <input type="radio" name="answer2" value="b" id="b2">
+                <label for="b2"> Charles Dickens</label><br>
+                <input type="radio" name="answer2" value="c" id="c2">
+                <label for="c2">Mark Twain</label><br>
+                <input type="radio" name="answer2" value="d" id="d2">
+                <label for="d2"> Jane Austen</label><br><br>
+                <button type="button" onclick="displayHint('hint2')">Hint</button>
+                <p id="hint2" style="display: none;">Hint: The playwright is famous for works like "Hamlet," "Macbeth," and "Othello."</p>
+            </form>
+        </div>
+        <script>
+            function checkAnswer2() {
+                var answer = document.querySelector('#question2 input[name="answer"]:checked');
+                if (answer !== null) {
+                    if (answer.value === "a") {
+                        alert("Correct! William Shakespeare wrote the play Romeo and Juliet.");
+                    } else {
+                        alert("Incorrect! The correct answer is William Shakespeare.");
+                    }
+                } else {
+                    alert("Please select an answer.");
+                }
+            }
+            function displayHint(id) {
+                var hint = document.getElementById(id);
+                hint.style.display = 'block';
+            }
+        </script>
+        
+        <div id="question3">
+            <h2>Question 3: What is the chemical symbol of water?</h2>
+            <form id="option">
+                <input type="radio" name="answer3" value="a" id="a3">
+                <label for="a3"> Wa</label><br>
+                <input type="radio" name="answer3" value="b" id="b3">
+                <label for="b3"> Hy</label><br>
+                <input type="radio" name="answer3" value="c" id="c3">
+                <label for="c3">H2O</label><br>
+                <input type="radio" name="answer3" value="d" id="d3">
+                <label for="d3"> Ag</label><br><br>
+                <button type="button" onclick="displayHint('hint3')">Hint</button>
+                <p id="hint3" style="display: none;">Hint: Consider the chemical elements that make up water and their respective symbols.</p>
+            </form>
+        </div>
+        <script>
+            function checkAnswer3() {
+                var answer = document.querySelector('#question3 input[name="answer"]:checked');
+                if (answer !== null) {
+                    if (answer.value === "c") {
+                        alert("Correct! H2O is the chemical symbol of water.");
+                    } else {
+                        alert("Incorrect! The correct answer is H2O.");
+                    }
+                } else {
+                    alert("Please select an answer.");
+                }
+            }
+            function displayHint(id) {
+                var hint = document.getElementById(id);
+                hint.style.display = 'block';
+            }
+        </script>
+        
+        <div id="question4">
+            <h2>Question 4: Who painted the Mona Lisa?</h2>
+            <form id="option">
+                <input type="radio" name="answer4" value="a" id="a4">
+                <label for="a4"> Vincent van Gogh</label><br>
+                <input type="radio" name="answer4" value="b" id="b4">
+                <label for="b4"> Leonardo da Vinci</label><br>
+                <input type="radio" name="answer4" value="c" id="c4">
+                <label for="c4">Pablo Picasso</label><br>
+                <input type="radio" name="answer4" value="d" id="d4">
+                <label for="d4"> Claude Monet</label><br><br>
+                <button type="button" onclick="displayHint('hint4')">Hint</button>
+                <p id="hint4" style="display: none;">Hint: The artist's name starts with the letter "L".</p>
+            </div>
+            </form>
+        </div>
+        <script>
+            function checkAnswer4() {
+                var answer = document.querySelector('#question4 input[name="answer"]:checked');
+                if (answer !== null) {
+                    if (answer.value === "b") {
+                        alert("Correct! Leonardo da Vinci painted the Mona Lisa.");
+                    } else {
+                        alert("Incorrect! The correct answer is Leonardo da Vinci.");
+                    }
+                } else {
+                    alert("Please select an answer.");
+                }
+            }
+            function displayHint(id) {
+                var hint = document.getElementById(id);
+                hint.style.display = 'block';
+            }
+        </script>
+        
+        <div id="question5">
+            <h2>Question 5: What is the tallest mammal in the world?</h2>
+            <form id="option">
+                <input type="radio" name="answer5" value="a" id="a5">
+                <label for="a5"> Giraffe</label><br>
+                <input type="radio" name="answer5" value="b" id="b5">
+                <label for="b5"> Elephant</label><br>
+                <input type="radio" name="answer5" value="c" id="c5">
+                <label for="c5">Rhinoceros</label><br>
+                <input type="radio" name="answer5" value="d" id="d5">
+                <label for="d5"> Hippopotamus</label><br><br>
+                <button type="button" onclick="displayHint('hint5')">Hint</button>
+                <p id="hint5" style="display: none;">Hint: This animal has a long neck and spots on its body.</p>
+            </form>
+        </div>
+        <script>
+            function checkAnswer5() {
+                var answer = document.querySelector('#question5 input[name="answer"]:checked');
+                if (answer !== null) {
+                    if (answer.value === "a") {
+                        alert("Correct! Giraffe is the tallest animal in the world.");
+                    } else {
+                        alert("Incorrect! The correct answer is Giraffe.");
+                    }
+                } else {
+                    alert("Please select an answer.");
+                }
+            }
+            function displayHint(id) {
+                var hint = document.getElementById(id);
+                hint.style.display = 'block';
+            }
+        </script>
+
+        <button type="button" id="submitBtn" onclick="submitQuiz()" href="mresult.html">Submit Quiz</button>
+        <script src="mresult.js"></script>
+    </form>
+
+    <script src="mcq.js"></script>
+
+        
+</body>
+</html>
+

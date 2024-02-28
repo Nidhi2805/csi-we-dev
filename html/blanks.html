@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-in-the-Blanks Quiz</title>
+    <link rel="stylesheet" href="blanks.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Fill-in-the-Blanks Quiz</h1>
+        <div id="timer">
+            <i class="fas fa-clock"></i> Time Left: <span id="countdown">60</span> seconds
+        </div>
+        <div class="question-box">
+            <div class="question">Question 1: The capital of France is <input type="text" id="answer1" placeholder="Enter your answer"></div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Question 2: The largest planet in our solar system is <input type="text" id="answer2" placeholder="Enter your answer"></div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Question 3: The chemical symbol for water is <input type="text" id="answer3" placeholder="Enter your answer"></div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Question 4: The process of plants making their own food is called <input type="text" id="answer4" placeholder="Enter your answer"></div>
+        </div>
+
+        <div class="question-box">
+            <div class="question">Question 5: The force that pulls objects towards the center of the Earth is called <input type="text" id="answer5" placeholder="Enter your answer"></div>
+        </div>
+
+        <button type="button" id="submitBtn" onclick="submitQuiz()" href="bscore.html">Submit Quiz</button>
+        <script src="bscore.js"></script>
+    </div>
+    <script src="blanks.js"></script>
+</body>
+</html>
+
